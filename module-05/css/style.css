@@ -1,0 +1,339 @@
+.clearfix::after {
+    display: table;
+    content: "";
+    clear: both;
+}
+
+.wrapper {
+    width: 1110px;
+    margin: auto;
+}
+
+.header {
+    padding-top: 38px;
+    padding-bottom: 110px;
+}
+
+.header-navigation-logolink {
+    display: inline-block;
+}
+
+.logo-link-name {
+    float: left;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: #555252;
+    font-family: "Roboto";
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 32px;
+    text-transform: uppercase;
+}
+
+.logo-link-name::first-letter {
+    color: #1abc9c;
+    font-family: "Roboto";
+    font-weight: 900;
+    letter-spacing: -0.6px;
+}
+
+.logo-link-name {
+    margin: 0;
+    padding: 0;
+}
+
+.header-navigation-list {
+    float: right;
+    width: 465 px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.header-navigation-listitem {
+    float: left;
+    margin-right: 35px;
+}
+
+.header-navigation-listitem:last-child {
+    margin: 0;
+} 
+
+.header-navigation-link {
+    display: block;
+    text-decoration: none;
+    color: #0f0101;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.header-navigation-link:hover {
+    color: #1abc9c;
+}
+
+.main-slider {
+    height: 600px;
+    background-image: url('../img/bg1-2.jpg');
+    position: relative;
+}
+
+.left-side,
+.right-side {
+    padding: 0;
+    border: none;
+    background: none;
+    width: 104px;
+    height: 104px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: rgba(78,198,171,0.65);
+}
+.left-side {
+    background-image: url(../img/al1-2.png);
+    float: left;
+}
+
+.right-side {
+    background-image: url(../img/ar1-2.png);
+    float: right;
+}
+
+.container-slider {
+    padding-top: 225px;
+    text-align: center;
+}
+
+.main-slider-information {
+    display: inline-block;
+}
+
+.main-slider-info,
+.main-slider-text {
+    margin: 0;
+    padding: 0;
+}
+
+.main-slider-info {
+    color: #ffffff;
+    font-family: "Roboto";
+    font-size: 60px;
+    font-weight: 900;
+    letter-spacing: -1.2px;
+}
+
+.main-slider-text {
+    float: left;
+    margin-top: 25px;
+    color: #ffffff;
+    font-family: "Roboto Light";
+    font-weight: 300;
+    letter-spacing: -0.48px;
+    font-size: 16px;
+}
+
+.left-side:hover,
+.right-side:hover {
+    background-color: #4EC6AB;
+}
+
+.main-collection{
+    padding-top: 101px;
+    padding-bottom: 100px;
+    text-align: center;
+    background-color: #e9f0fd;
+}
+
+.collection-information {
+    display: inline-block;
+    margin: 0;
+    margin: auto;
+    color: #515151;
+    font-family: "Roboto";
+    font-size: 48px;
+    font-weight: 900;
+    text-transform: uppercase;  
+    letter-spacing: -0.96px;
+}
+
+.collection-information::after {
+    content: '';
+    display: block;
+    margin: 32px auto 0;
+    width: 164px;
+    height: 7px;
+    background-color: #1abc9c;
+}
+
+.collection-list {
+    padding: 0;
+    margin-top: 81px;
+    font-size: 0;
+}
+
+.collection-listitem {
+    list-style: none;
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    width: 255px;
+}
+
+.collection-listitem:not(:last-of-type) {
+    margin-right: 30px; 
+}
+
+.collection-listitem-link {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 0;
+}
+
+.collection-productinformation {
+    background-color: #323232;
+    height: 40px;
+}
+
+.collection-ptoductname {
+    float: left;
+    margin: 0;
+    padding-left: 14px;
+    color: #ffffff;
+    font-family: "Roboto";
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 40px;
+    text-transform: uppercase;
+    letter-spacing: -0.36px;
+}
+
+.collection-productprice {
+    float: right;
+    margin: 0;
+    padding: 0 12px;
+    color: #ffffff;
+    font-family: "Roboto";
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 40px;
+    text-transform: uppercase;
+    letter-spacing: -0.36px;
+    background-color: rgba(255,255,255,0.3);
+}
+
+.collection-listitem:hover .collection-productinformation {
+    background-color: #1abc9c;
+}
+
+.hover-information {
+    position: absolute;
+    display: none;
+    top: 0%;
+    width: 245px;
+    height: 312px;
+    background-color: rgba(0,0,2,0.5);
+    margin: 5px;
+}
+
+.collection-listitem:hover .hover-information {
+    display: block;
+} 
+
+.add-to-cart-link {
+    display: inline-block;
+    width: 180px;
+    height: 50px;
+}
+
+.info-button1,
+.info-button2,
+.info-button3 {
+    background: none;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 25px;
+    margin-bottom: 7px;
+    margin-top: 90px;
+    cursor: pointer;
+}
+
+.info-button1 {
+    background-image: url(../img/h1-2.png);
+
+    border: 1px solid #ffffff;
+    margin-right: 13px;
+}
+
+.info-button2 {
+    background-image: url(../img/a1-2.png);
+    border: 1px solid #ffffff;
+    margin-right: 13px;
+}
+
+.info-button3 {
+    background-image: url(../img/cl1-2.png);
+    border: 1px solid #ffffff;
+}
+
+.info-add-to-cart {
+    display: inline-block;
+    width: 180px;
+    height: 50px;
+    border: 1px solid #ffffff;
+    background-color: #323232;
+}
+
+.cart {
+    float: left;
+    padding: 11px 0 12px 13px;
+}
+
+.add-to-cart_text{
+    margin: 0;
+    padding: 20px 18px 20px 0;
+    float: right;
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: -0.28px;
+}
+
+.info-button1:hover,
+.info-button2:hover,
+.info-button3:hover,
+.info-add-to-cart:hover {
+    background-color: #1abc9c;
+}
+
+.footer {
+    height: 88px;
+    background-color: #323232;
+    text-align: center;
+}
+
+.footer p {
+    display: inline-block;
+    margin: 0;
+    margin-top: 38px;
+    color: #fefefe;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: -0.32px;
+}
+
+.footer p span {
+    color: #46bfa9;
+}
+
+    
+
+
+
+
+
