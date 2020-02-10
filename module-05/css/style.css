@@ -18,16 +18,18 @@
     padding-top: 38px;
     padding-bottom: 34px;
 }
+
 .wrapper {
     margin: 0 auto;
 }
 
 .header-navigation-logolink {
+    float: left;
     display: inline-block;
+    text-decoration: none;
 }
 
 .logo-link-name {
-    float: left;
     margin: 0;
     padding: 0;
     text-decoration: none;
@@ -81,6 +83,7 @@
 .header-navigation-link:hover {
     color: #1abc9c;
 }
+
 
 .main-slider {
   height: 600px;
