@@ -1,0 +1,38 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container {
+    width: 1200px;
+    margin: auto;
+}
+
+.icon {
+    width: 18px;
+    height: 18px;
+    fill: #fff;
+    &-links {
+        width: 26px;
+        height: 26px;
+        fill: #f38181;
+    }
+}
+
+.main::after {
+    content: '';
+    display: block;
+    margin: auto;
+    width: 1200px;
+    height: 1px;
+    background-color: #e5e5e5;
+}

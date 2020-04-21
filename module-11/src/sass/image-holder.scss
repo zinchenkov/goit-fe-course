@@ -1,0 +1,100 @@
+.image-holder {
+    background-image: linear-gradient(to top, $yellow-rgba 0%, $red-rgba 100%), url(../images/bg-image.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 1000px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    &__logo {
+        margin: 0;
+        padding: 0;
+        &-link {
+            text-decoration: none;
+            color: $text-color;
+            font-family: 'Montserrat';
+            font-size: 30px;
+            font-weight: 700;
+            padding-bottom: 12px;
+
+            transition: 0.2s;
+            &:hover {
+                color: $yellow-color;
+                border-bottom: 3px solid $yellow-color;
+            }
+        }
+    }
+    &__nav {
+        width: 620px;
+    }
+    &__list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        &-item-link {
+            text-decoration: none;
+            color: $text-color;
+            font-family: 'Montserrat';
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+            padding-bottom: 12px;
+
+            transition: 0.2s;
+            &:hover {
+                color: $yellow-color;
+                border-bottom: 3px solid $yellow-color;
+                .icon { 
+                    fill: $yellow-color;
+                }
+            }
+        }
+    }
+}
+
+.under-header {
+    padding-top: 164px;
+    text-align: center;
+    &__title {
+        color: $text-color;
+        font-family: "Kaushan Script";
+        font-size: 72px;
+        font-weight: 400;
+        text-align: center;
+    }
+    &__under-title {
+        padding-top: 42px;
+        display: block;
+        width: 852px;
+        margin: auto;
+        color: $text-color;
+        font-family: 'Montserrat';
+        font-size: 150px;
+        line-height: 140px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    &__btn {
+        width: 160px;
+        height: 40px;
+        border: 3px solid $text-color;
+        background: none;
+
+        color: $text-color;
+        font-family: 'Montserrat';
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+
+        transition: 0.2s;
+        &:hover {
+            color: $yellow-color;
+            background: $text-color;
+        }
+    }
+}

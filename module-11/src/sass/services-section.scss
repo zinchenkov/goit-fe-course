@@ -1,0 +1,79 @@
+.services {
+    padding-top: 46px;
+    &__title::after {
+        content: '';
+        display: block;
+        margin: auto;
+        width: 60px;
+        height: 3px;
+        background-color: $red-color;
+    }
+    &__list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        &-item {
+            width: 330px;
+            display: flex;
+            &:not(:nth-of-type(n+4)) {
+                margin-bottom: 100px;
+            }
+            &-block {
+                width: 270px;
+                text-align: left;
+            }
+            &-name {
+                margin: 0;
+                padding-bottom: 20px;
+                color: $section-text;
+                font-family: 'Montserrat';
+                font-size: 14px;
+                font-weight: 400;
+                text-transform: uppercase;
+            }
+            &-desc {
+                margin: 0;
+                color: $desc-color;
+                font-family: 'Roboto';
+                font-size: 15px;
+                font-weight: 400;
+                line-height: 24px;
+            }
+
+            &--photography::before,
+            &--web-design::before,
+            &--creativity::before,
+            &--seo::before,
+            &--css-html::before,
+            &--digital::before {
+                content: '';
+                display: block;
+                margin-right: 30px;
+                height: 32px;
+                width: 32px;
+                background-repeat: no-repeat;
+            }
+            &--photography::before {
+                background-image: url(../images/photography.svg);
+            }
+            &--web-design::before {
+                background-image: url(../images/web-design.svg);
+            }
+            &--creativity::before {
+                background-image: url(../images/creativity.svg);
+            }
+            &--seo::before {
+                background-image: url(../images/seo.svg);
+            }
+            &--css-html::before {
+                background-image: url(../images/html-css.svg);
+            }
+            &--digital::before {
+                background-image: url(../images/digital.svg);
+            }
+        }
+    }
+}

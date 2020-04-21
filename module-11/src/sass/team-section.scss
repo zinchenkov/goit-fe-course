@@ -1,0 +1,112 @@
+.team {
+    padding: 92px 0 82px;
+    &__title::after {
+        content: '';
+        display: block;
+        margin: auto;
+        width: 60px;
+        height: 3px;
+        background-color: $red-color;
+    }
+    &__desc {
+        width: 954px;
+        margin: 0 auto;
+        padding-bottom: 92px;
+        color: $desc-color;
+        font-family: 'Roboto';
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+    &__list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__img-bg {
+        background-color: $blue-color;
+        height: 470px;
+        position: relative;
+        &:hover {
+            .team__member {
+                transform: translate(-10px, -10px);
+                &-fall-out {
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+        }
+    }
+    &__member {
+        width: 380px;
+        height: auto;
+        transition: 0.2s 0.2s;
+        &:hover {
+            transition: 0.2s;
+        }
+        &-name {
+            margin: 0;
+            padding: 30px 0 15px;
+            color: $section-text;
+            font-family: 'Montserrat';
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+        }
+        &-post {
+            margin: 0;
+            color: $desc-color;
+            font-family: 'Roboto';
+            font-style: italic;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 24px;
+        }
+        &-fall-out {
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            width: 380px;
+            height: 470px;
+            background: linear-gradient( to bottom, #{$yellow-rgba} 0%, #{$red-rgba} 100% );
+            opacity: 0;
+            visibility: hidden;
+
+            transition: 0.2s 0.2s;
+            &-links {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                display: flex;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 224px;
+                height: 56px;
+                background-color: $yellow-color;
+            }
+            &-item {
+                width: 56px;
+                height: 56px;
+                transition: 0.2s;
+                &:hover {
+                    background-color: $red-color;
+                    .icon-links {
+                        fill: $text-color;
+                    }
+                }
+            }
+            &-link {
+                display: block;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+}

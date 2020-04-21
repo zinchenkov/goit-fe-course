@@ -1,0 +1,5 @@
+@media #{$retina-media} {
+    .image-holder {
+        background-image: linear-gradient(to top, $yellow-rgba 0%, $red-rgba 100%), url(../images/bg-image@2x.jpg);
+    }
+}
